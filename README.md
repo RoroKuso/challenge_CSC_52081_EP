@@ -4,8 +4,20 @@ A reinforcement learning environment for optimizing turbofan engine maintenance.
 
 
 ## Latest updates:
+- 01/03: Added max usage limit at 100k step() calls (largely sufficient). If you need more, please reach out
+- 25/02: added score, stabilized features, increased speed
 - 18/02: updated vectorized version and some function abstraction (v0.3)
 - 13/02: fixed some token access and np format in single_trajectory example
+
+## Baselines 01/03
+
+Here are the two baselines you should try to beat if possible. The ranking is done on the Total Reward over the last 100 computed episodes, but you are encouraged to discuss the other metrics in your report. 
+
+| Name       | Total Reward | Average Reward | Best Reward | Episodes | # Maintenances | Avg. Length | Failure Rate |
+|------------|--------------|----------------|-------------|----------|-----------------|-------------|--------------|
+| Baseline 1 | 395144.11    | 3951.44        | 4410.57     | 100      | 696             | 320.2       | 5.0%         |
+| Baseline 2 | 311106.51    | 3111.07        | 5106.13     | 100       | 487            | 298.1       | 47.0%        |
+
 
 ## Key Concepts
 
